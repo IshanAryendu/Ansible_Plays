@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+    - name: run apt update and install python2
+      apt:
+        name: apache2
+        state: latest
+        update_cache: yes 
+      
